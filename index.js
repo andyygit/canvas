@@ -25,7 +25,10 @@ class Circle {
   }
 }
 
-let circle = new Circle(50, 50, 30, 'red', 5, 1);
+const startX = () => Math.ceil(Math.random() * 1024);
+const startY = () => Math.ceil(Math.random() * 576);
+
+let circle = new Circle(startX(), startY(), 30, 'red', 5, 5);
 
 const update = () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
